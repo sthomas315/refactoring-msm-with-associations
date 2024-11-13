@@ -131,7 +131,7 @@
   </tr>
 
  
-  <% films = @the_director.filmography.order({:year => asc}) %>
+ <% films = @the_director.filmography.order({ :year => :asc }) %>
 
   <% films.each do |a_movie| %>
     <tr>
@@ -152,7 +152,6 @@
       </td>
 
       <td>
-       
         <%= a_movie.director.name %>
       </td>
 
